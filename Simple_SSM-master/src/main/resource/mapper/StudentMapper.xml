@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--为dao层的接口提供对应的sql语句-->
+<mapper namespace="com.hh.dao.IStudentDao">
+    <!--查询一个用户-->
+<select id="selectStudent" parameterType="String" resultType="Student">
+   select * from student where studentName= #{studentName}
+</select>
+</mapper>
